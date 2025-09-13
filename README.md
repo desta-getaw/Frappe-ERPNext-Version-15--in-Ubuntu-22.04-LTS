@@ -187,11 +187,13 @@ Now press (Ctrl-X) to exit
     
 ### STEP 14 create a site in frappe bench 
     
-    bench new-site dcode.com
+    bench new-site desutech.com
     
-    bench --site dcode.com add-to-hosts
+    bench --site desutech.com add-to-hosts
+    bench --site desutech.com migrate
 
-Open url http://dcode.com:8000 to login 
+Open url http://desutech.com:8000 to login 
+ 
 
 
 ### STEP 15 install ERPNext latest version in bench & site
@@ -201,7 +203,9 @@ Open url http://dcode.com:8000 to login
     ###OR
     bench get-app https://github.com/frappe/erpnext --branch version-15
 
-    bench --site dcode.com install-app erpnext
+    bench --site desutech.com install-app erpnext
+   bench --site desutech.com migrate
+
     
     bench start
     
